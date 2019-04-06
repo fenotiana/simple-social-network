@@ -9,6 +9,7 @@ env:
   - CI=true
 
 before_deploy:
+  - mkdir www/
   - npm install netlify-cli -g
   - npm run build
 
